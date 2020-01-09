@@ -31,3 +31,17 @@
 .form-button:hover {
     cursor: pointer;
 }
+
+@media (max-width: 420px) {
+    .form-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-input {
+        width: 90%;
+    }
+    .form-button {
+        width: 200px;
+        height: 40px;
+    }
+}
