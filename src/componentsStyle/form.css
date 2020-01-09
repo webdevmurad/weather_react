@@ -1,0 +1,33 @@
+.form-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.form-input {
+    height: 30px;
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: #0271CD; 
+    border-bottom: 2px solid #0C3C77;
+    outline: none;
+}
+.form-input:hover {
+    cursor: pointer;
+}
+
+.form-button {
+    height: 30px;
+    margin: 10px;
+    border: 2px solid #0C3C77;
+    background: #205292;
+    color: white;
+    outline: none;
+}
+.form-button:hover {
+    cursor: pointer;
+}

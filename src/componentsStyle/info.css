@@ -1,0 +1,20 @@
+.info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background: url('../a899c309ff75364f723663eec4317f4f.jpg') center;
+    color: azure;
+}
+
+.info-title {
+    font-size: 30px;
+}
+
+.info-text {
+    font-size: 17px;
+}

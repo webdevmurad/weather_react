@@ -36,7 +36,16 @@ class App extends React.Component {
         country: data.sys.country,
         img: img,
         weather: data.weather[0]['main'],
-        error: ""
+        error: undefined
+      })
+    } else {
+      this.setState({
+        temp: undefined,
+        city: undefined,
+        country: undefined,
+        img: undefined,
+        weather: undefined,
+        error: "Введите название города"
       })
     }
   }
@@ -45,17 +54,23 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Info />
-        <Form weatherMethod={this.gettingWeather}/>
-        <Weather 
-          temp={this.state.temp}
-          city={this.state.city}
-          country={this.state.country}
-          img={this.state.img}
-          weather={this.state.weather}
-          error={this.state.error}
-        />
+      <div className="weather-wrap">
+        <div className="weather-block">
+          <div className="weather-block__left"> 
+            <Info />
+          </div>
+          <div className="weather-block__right">
+            <Form weatherMethod={this.gettingWeather}/>
+            <Weather 
+              temp={this.state.temp}
+              city={this.state.city}
+              country={this.state.country}
+              img={this.state.img}
+              weather={this.state.weather}
+              error={this.state.error}
+            />
+          </div>
+        </div>
       </div>
     )
   }
